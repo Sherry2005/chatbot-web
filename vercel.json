@@ -1,10 +1,10 @@
 {
-  "functions": {
-    "app.py": {
-      "maxDuration": 60,
-      "runtime": "@vercel/python"
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
